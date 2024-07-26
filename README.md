@@ -35,7 +35,7 @@
     ```java
     // Modifying Elements
     numbers[0] = 40;
-    System.out.println("Modified First Array Numbers: " + numbers[0]);
+    System.out.println("Modified First Array Numbers From 4 to : " + numbers[0]);
     ```
 
     Expected Output:
