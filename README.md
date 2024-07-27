@@ -75,28 +75,9 @@
     [10]
     [90]
     [30]
-
-6. **Enhanced For Loop (for-each)**: Introduced in Java 5, this simplifies iteration when you don't need the index. It's more concise and less error-prone than the standard for loop.
-
-    ```java
-    // Enhanced For Loop (for-each)
-    System.out.println("Array Names:");
-    for (String name : names) 
-    {
-        System.out.println(name);
-    }
     ```
 
-    Expected Output:
-
-    ```java
-    Array Names:
-    Alice
-    Bob
-    Charlie
-    ```
-
-7. **`Arrays.toString()`**: This method from the Arrays class provides a convenient way to print the contents of an array as a string.
+6. **`Arrays.toString()`**: This method from the Arrays class provides a convenient way to print the contents of an array as a string.
 
     ```java
     // Arrays.toString() for convert to string
@@ -115,7 +96,7 @@
     Array Numbers String Class: java.lang.String
     ```
 
-8. **`Arrays.sort()`**: This method sorts the array in ascending order. For primitive types, it uses a dual-pivot Quicksort algorithm.
+7. **`Arrays.sort()`**: This method sorts the array in ascending order. For primitive types, it uses a dual-pivot Quicksort algorithm.
 
     ```java
     // Array.sort() for sorting
@@ -129,7 +110,7 @@
     Sorted Array Numbers: [10, 20, 30, 40, 90]
     ```
 
-9. **`Arrays.fill()`**: This method assigns the specified value to each element of the array, useful for initializing or resetting arrays.
+8. **`Arrays.fill()`**: This method assigns the specified value to each element of the array, useful for initializing or resetting arrays.
 
     ```java
     // Array.fill() for filling
@@ -143,7 +124,7 @@
     Filled Array Names: [Cool Name, Bob, Charlie]
     ```
 
-10. **`Arrays.copyOf()`**: This creates a copy of the original array, optionally allowing you to specify a new length (which can be used to truncate or pad the array).
+9. **`Arrays.copyOf()`**: This creates a copy of the original array, optionally allowing you to specify a new length (which can be used to truncate or pad the array).
 
     ```java
     // Array.copyOf() for copying
@@ -157,21 +138,7 @@
     Copied Array Numbers: [10, 20, 30, 40, 90]
     ```
 
-11. **Binary Search**: `Arrays.binarySearch()` performs a binary search on a sorted array, returning the index of the found element or a negative value if not found.
-
-    ```java
-    // Binary Search
-    int index = Arrays.binarySearch(numbers, 40);
-    System.out.println("Index of 40 in Numbers Array: " + index);
-    ```
-
-    Expected Output:
-
-    ```java
-    Index of 40 in Numbers Array: 3
-    ```
-
-12. **Multidimensional Arrays**: Java supports arrays of arrays, allowing you to create matrices or higher-dimensional data structures.
+10. **Multidimensional Arrays**: Java supports arrays of arrays, allowing you to create matrices or higher-dimensional data structures.
 
     ```java
     // Multi-Dimensional Array
@@ -185,16 +152,24 @@
     Multi-Dimensional Array: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     ```
 
-13. **Stream Operations**: Introduced in Java 8, streams provide a more functional approach to array processing, with methods for mapping, filtering, and reducing array data.
+11. **Stream Operations**: Introduced in Java 8, streams provide a more functional approach to array processing, with methods for mapping, filtering, and reducing array data.
 
     ```java
     // Stream operation (Java8+)
     int sum = Arrays.stream(numbers).sum();
     System.out.println("Sum of Numbers Array: " + sum);
+    
+    // Traditional way
+        int sumNum = 0;
+        for (int num : numbers) {
+            sumNum += num;
+        }
+        System.out.println("Traditional way Sum of Numbers Array: " + sumNum);
     ```
 
     Expected Output:
 
     ```java
     Sum of Numbers Array: 190
+    Traditional way Sum of Numbers Array: 190
     ```

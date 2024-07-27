@@ -31,13 +31,7 @@ public class App {
             System.out.println("[" + numbers[i] + "]");
         }
 
-        // 6. Enhanced For Loop (for-each)
-        System.out.println("Array Names:");
-        for (String name : names) {
-            System.out.println(name);
-        }
-
-        // 7. Arrays.toString() for convert to string
+        // 6. Arrays.toString() for convert to string
         String numbersString = Arrays.toString(numbers);
         System.out.println("Array Numbers toString: " + numbersString);
 
@@ -45,28 +39,32 @@ public class App {
         Class<?> numbersStringClass = numbersString.getClass();
         System.out.println("Array Numbers String Class: " + numbersStringClass.getName());
 
-        // 8. Array.sort() for sorting
+        // 7. Array.sort() for sorting
         Arrays.sort(numbers);
         System.out.println("Sorted Array Numbers: " + Arrays.toString(numbers));
 
-        // 9. Array.fill() for filling
+        // 8. Array.fill() for filling
         Arrays.fill(names, 0, 1, "Cool Name");
         System.out.println("Filled Array Names: " + Arrays.toString(names));
 
-        // 10. Array.copyOf() for copying
+        // 9. Array.copyOf() for copying
         int[] copiedArrayNumbers = Arrays.copyOf(numbers, numbers.length);
         System.out.println("Copied Array Numbers: " + Arrays.toString(copiedArrayNumbers));
 
-        // 11. Binary Search
-        int index = Arrays.binarySearch(numbers, 40);
-        System.out.println("Index of 40 in Numbers Array: " + index);
-
-        // 12. Multi-Dimensional Array
+        // 10. Multi-Dimensional Array
         int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         System.out.println("Multi-Dimensional Array: " + Arrays.deepToString(matrix));
 
-        // 13. Stream operation (Java8+)
+        // 11. Stream operation (Java8+)
         int sum = Arrays.stream(numbers).sum();
         System.out.println("Sum of Numbers Array: " + sum);
+
+        // Traditional way
+        int sumNum = 0;
+        for (int num : numbers) {
+            sumNum += num;
+        }
+        System.out.println("Traditional way Sum of Numbers Array: " + sumNum);
+
     }
 }
