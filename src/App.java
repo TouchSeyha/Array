@@ -51,11 +51,7 @@ public class App {
         int[] copiedArrayNumbers = Arrays.copyOf(numbers, numbers.length);
         System.out.println("Copied Array Numbers: " + Arrays.toString(copiedArrayNumbers));
 
-        // 10. Multi-Dimensional Array
-        int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-        System.out.println("Multi-Dimensional Array: " + Arrays.deepToString(matrix));
-
-        // 11. Stream operation (Java8+)
+        // 10. Stream operation (Java8+)
         int sum = Arrays.stream(numbers).sum();
         System.out.println("Sum of Numbers Array: " + sum);
 

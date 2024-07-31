@@ -138,21 +138,7 @@
     Copied Array Numbers: [10, 20, 30, 40, 90]
     ```
 
-10. **Multidimensional Arrays**: Java supports arrays of arrays, allowing you to create matrices or higher-dimensional data structures.
-
-    ```java
-    // Multi-Dimensional Array
-    int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-    System.out.println("Multi-Dimensional Array: " + Arrays.deepToString(matrix));
-    ```
-
-    Expected Output:
-
-    ```java
-    Multi-Dimensional Array: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    ```
-
-11. **Stream Operations**: Introduced in Java 8, streams provide a more functional approach to array processing, with methods for mapping, filtering, and reducing array data.
+10. **Stream Operations**: Introduced in Java 8, streams provide a more functional approach to array processing, with methods for mapping, filtering, and reducing array data.
 
     ```java
     // Stream operation (Java8+)
